@@ -4,11 +4,9 @@ import os
 
 processes = []
 
-# ANSI-код очистки экрана и перевода курсора в начало
 CLEAR = "\033[2J\033[H"
 
 def clear_screen():
-    # В Windows 10+ ANSI работает; если нет — раскомментируйте os.system("cls")
     sys.stdout.write(CLEAR)
     sys.stdout.flush()
 
